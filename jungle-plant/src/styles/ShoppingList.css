@@ -1,0 +1,18 @@
+.jh-plant-list {
+    list-style-type: none;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto,
+}
+
+.jh-sales {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-weight: 500;
+    color: white;
+    padding: 0.3rem 0.3rem;
+    background-color: #31b572;
+    border-radius: 8px;
+}

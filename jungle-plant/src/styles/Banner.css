@@ -1,0 +1,16 @@
+.jh-banner {
+    color: black;
+    text-align: right;
+    padding: 2rem;
+    border-bottom: solid 3px black;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--white);
+}
+
+
+.jh-title {
+    padding-left: 2rem;
+}
