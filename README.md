@@ -54,16 +54,16 @@ JavaScript (ES6+)
 
 Intl.NumberFormat
 
-🙏 Credits
+##🙏 Credits
 This project was originally guided by OpenClassrooms(https://openclassrooms.com/en/courses/7132446-create-a-web-application-with-react-js).
 All instructional content and starter code are credited to them.
 
-As part of my learning journey, I Refactored, customized and extended the project to reinforce my understanding of:
+##As part of my learning journey, I refactored Create React App to Next.js, customized and extended the project to reinforce my understanding of:
 
-🛠️ React and Next.js architecture
-💱 Currency formatting with Intl.NumberFormat for Ghanaian cedis (GH₵)
-🧩 Component modularity and utility abstraction
-📁 Static asset handling via the public directory
-📄 License
+###🛠️ React and Next.js architecture
+###💱 Currency formatting with Intl.NumberFormat for Ghanaian cedis (GH₵)
+###🧩 Component modularity and utility abstraction
+###📁 Static asset handling via the public directory
+##📄 License
 
 This project is open source and available under the MIT License.
