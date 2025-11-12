@@ -1,6 +1,6 @@
 #🛒 Jungle house — React Next.js App
 
-A simple React + Next.js ecommerce project that displays a cart of plants with their prices and dynamically calculates the total cost. It also demonstrates currency formatting using Intl.NumberFormat for Ghanaian cedis (GH₵).
+A simple React + Next.js ecommerce project that displays a list of plants with their prices and dynamically calculates the total cost. It also demonstrates currency formatting using Intl.NumberFormat for Ghanaian cedis (GH₵).
 
 ##🚀 Features
 
