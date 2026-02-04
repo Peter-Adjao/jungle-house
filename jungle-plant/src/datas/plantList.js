@@ -84,5 +84,13 @@ export const plantList = [
         light: 2,
         water: 1,
         cover: '/images/monstera.jpg'
+    },
+    {
+        name: "Succulent",
+        category: "succulent",
+        id: "11s",
+        light: 2,
+        water: 1,
+        cover: '/images/monstera.jpg'
     }
 ];

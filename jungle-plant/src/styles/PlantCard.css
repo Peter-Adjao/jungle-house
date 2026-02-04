@@ -1,26 +1,27 @@
 .plant-card {
 	margin: 10px;
 	display: flex;
-	align-items: flex-start;
+	min-width: 200px;
 	justify-content: center;
 	flex-direction: column;
 	text-transform: capitalize;
-	/* border: #AD55A6 2px solid; */
+	border: #AD55A6 2px solid;
 }
 
 .plant-card-image-container {
 	height: 200px;
-	width: 200px;
+	width: 100%;
 	border-radius: 20px;
 	position: relative;
 	overflow:hidden;
 }
 
 .plant-card-image {
-	height: 200px;
-	width: 200px;
+	height: auto;
+	width: 100%;
 	border-radius: 20px;
 	object-fit: cover;
+	display: block;
   	transition: transform 0.3s ease-in-out;
 
 }

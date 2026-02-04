@@ -1,7 +1,42 @@
 .jh-cart {
-	color: white;
-	background-color: #31b572;
-	padding: 32px;
+	color: var(--white);
+	background-color: var(--cart-bg);
+	padding: var(--spacing);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+	justify-content: flex-start;
+}
+
+.jh-cart-add-button {
+	margin-left: var(--spacing);
+	cursor: pointer;
+	color: var(--white);
+	transition: var(--transition-fast);
+}
+
+.jh-cart-add-button:hover {
+	opacity: 0.85;
+}
+
+
+.jh-cart-toggle-button {
+	background: gray;
+	border: none;
+	color: var(--white);
+	font-weight: 600;
+	cursor: pointer;
+	padding: 4px 0;
+	align-self: self-start;
+	transition: var(--trnsition-fast)
+}
+
+.jh-cart--closed {
+	padding: var(--spacing);
+}
+
+.jh-cart--closed > button {
+	color: black;
 }
 
 ul li {

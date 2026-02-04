@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "@/styles/Layout.css";
+// import "@/styles/Layout.css";
 
 
 export const metadata = {

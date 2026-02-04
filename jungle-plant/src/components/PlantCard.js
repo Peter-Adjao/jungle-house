@@ -4,13 +4,13 @@ import Image from 'next/image'
 import CareScale from './CareScale'
 import '../styles/PlantCard.css'
 
-function handleClick(plantName) {
-	 alert(`You want to buy 1 ${plantName}? Great choice 🌱✨`);
-}
+// function handleClick(plantName) {
+// 	 alert(`You want to buy 1 ${plantName}? Great choice 🌱✨`);
+// }
 
-function PlantCard({ id, cover, name, bestSale, water, light }) {
+function PlantCard({ cover, name, bestSale, water, light }) {
 	return (
-		<li className='plant-card' onClick={handleClick}>
+		<li className='plant-card' >
 			<div className='plant-card-image-container'>
 				<Image
 					src={cover}
@@ -19,7 +19,6 @@ function PlantCard({ id, cover, name, bestSale, water, light }) {
 					className='plant-card-image'
 				/>
 				 {bestSale && <div className="card-sales-badge">Sales</div>}
-				 {/* {bestSale && <span className='lmj-best-sale'>🔥 Best Seller</span>}  */}
 			</div>
 
 			<h3 className='lmj-plant-name'>{name}</h3>

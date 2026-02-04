@@ -1,36 +1,61 @@
-import { plantList } from '../datas/plantList';
+"use client"
+import { useState } from 'react'
+import { plantList } from '../datas/plantList'
 import PlantCard from './PlantCard'
-import "../styles/ShoppingList.css";
+import Categories from './Categories'
+import "../styles/ShoppingList.css"
 
+function ShoppingList({ cart, updateCart }) {
+	// Selected category
+	const [activeCategory, setActiveCategory] = useState('')
 
-function ShoppingList() {
-    //Get unique categories
-    const categories = [...new Set(plantList.map((plant) => plant.category))];
+	// Get unique categories
+	const categories = [...new Set(
+		plantList.map((plant) => plant.category)
+	)]
 
-    return (
-        <div className='plant-products'>
-            <ul>
-                {/*Display categories*/}
-                {categories.map((cat, index) => (
-                    <li key={`${cat}-${index}`}>{cat}</li>
-                ))}
-            </ul>
-                
-            <ul className="jh-plant-list">
-                {plantList.map(({ id, cover, name, bestSale, water, light }) => (
-					<PlantCard
-                        key={id}
-						id={id}
-						cover={cover}
-						name={name}
-                        bestSale={bestSale}
-						water={water}
-						light={light} 
-					/>
-                ))}
-            </ul>
-        </div>
-    );
+	// Add plant to cart
+	function addToCart(name, price) {
+		const plantInCart = cart.find((plant) => plant.name === name)
+
+		if (plantInCart) {
+			updateCart(
+				cart.map((plant) =>
+					plant.name === name
+						? { ...plant, amount: plant.amount + 1 }
+						: plant
+				)
+			)
+		} else {
+			updateCart([...cart, { name, price, amount: 1 }])
+		}
+	}
+
+	return (
+		<div className="jh-shopping-list">
+
+			{/* Category filter */}
+			<Categories
+				categories={categories}
+				activeCategory={activeCategory}
+				setActiveCategory={setActiveCategory}
+			/>
+
+			{/* Plant list */}
+			<ul className="jh-plant-list">
+				{plantList.map((plant) =>
+					!activeCategory || activeCategory === plant.category ? (
+						<div key={plant.id}>
+							<PlantCard {...plant} />
+							<button onClick={() => addToCart(plant.name, plant.price)}>
+								Add
+							</button>
+						</div>
+					) : null
+				)}
+			</ul>
+		</div>
+	)
 }
 
 export default ShoppingList;

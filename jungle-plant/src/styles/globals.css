@@ -6,6 +6,12 @@
   --gradient-accent: linear-gradient(to right,  var(--color-accent-start), var(--color-accent-end));
   --gray-50: #f9fafb;
   --white: #ffffff;
+  --cart-bg: #31b572;
+	--button-text: #ffffff;
+	--button-hover: rgba(255, 255, 255, 0.2);
+	--transition-fast: 0.25s ease;
+	--radius: 8px;
+	--spacing: 24px;
 
 
 }
