@@ -36,7 +36,7 @@ function Cart({ cart, updateCart }) {
 				onClick={() => setIsOpen(!isOpen)}
 				aria-label="Toggle Cart"
 			>
-				{isOpen ? "Close" : "Open Cart"}
+				{isOpen ? "Close Cart" : "Open Cart"}
 			</button>
 
 			{isOpen && (
@@ -60,7 +60,7 @@ function Cart({ cart, updateCart }) {
 								className="cart__clear"
 								onClick={() => updateCart([])}
 							>
-								Empty Cart
+								Clear Cart
 							</button>
 						</>
 					) : (

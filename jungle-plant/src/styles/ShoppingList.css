@@ -1,24 +1,27 @@
-.jh-plant-list {
+/* .jh-plant-list {
     list-style-type: none;
     padding: 2rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .jh-shopping-list {
 width: 100%;
 }
 
-/* .jh-plant-list {
+.add-to-cart {
+    margin-left: 0.7rem;
+}
+
+ .jh-plant-list {
     list-style-type: none;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 1200p;    /*keeps the grid centered and clean */  
-    /* margin: 0 auto;         
-}  */
+    max-width: 1200p;    /*keeps the grid centered and clean */          
+}  
 
 
 
@@ -32,3 +35,5 @@ width: 100%;
     background-color: #31b572;
     border-radius: 8px;
 }
+
+

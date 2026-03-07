@@ -47,7 +47,7 @@ function ShoppingList({ cart, updateCart }) {
 					!activeCategory || activeCategory === plant.category ? (
 						<div key={plant.id}>
 							<PlantCard {...plant} />
-							<button onClick={() => addToCart(plant.name, plant.price)}>
+							<button className="add-to-cart" onClick={() => addToCart(plant.name, plant.price)}>
 								Add
 							</button>
 						</div>

@@ -8,6 +8,9 @@
     flex-direction: row;
     align-items: center;
     background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 

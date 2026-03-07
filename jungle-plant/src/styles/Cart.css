@@ -21,24 +21,47 @@
 
 
 .jh-cart-toggle-button {
-	background: gray;
+	width: 100%;
+	line-height: 1.5;
+	background: var(--white);
+	border-radius: 6px;
 	border: none;
-	color: var(--white);
+	color: #374151;
 	font-weight: 600;
 	cursor: pointer;
-	padding: 4px 0;
+	padding: 0.6rem 1rem;
 	align-self: self-start;
-	transition: var(--trnsition-fast)
+	transition: var(--trnsition-fast);
 }
 
-.jh-cart--closed {
-	padding: var(--spacing);
-}
-
-.jh-cart--closed > button {
-	color: black;
-}
 
 ul li {
 	margin-left: 3rem;
+}
+
+.cart__clear {
+	color: #374151;
+	font-weight: 600;
+	padding: 0.6rem 1rem;
+	border-radius: 6px;
+	border: none;
+	margin: 3rem 0; 
+	width: 100%;
+	cursor: pointer;
+	background: var(--white);
+	transition: all 0.25s ease;
+}
+
+.cart__clear:hover {
+	background-color: #adf724;
+	color: white;
+}
+
+.cart__clear:active {
+	transform: scale(0.97);
+}
+
+.jh-cart-toggle-button:hover {
+	background-color: #adf724;
+	color: white;
 }

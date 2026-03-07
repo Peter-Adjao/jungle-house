@@ -5,7 +5,6 @@
 	justify-content: center;
 	flex-direction: column;
 	text-transform: capitalize;
-	border: #AD55A6 2px solid;
 }
 
 .plant-card-image-container {

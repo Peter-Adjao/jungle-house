@@ -2,16 +2,16 @@ import "../styles/Categories.css"
 
 function Categories({ categories, index, activeCategory, setActiveCategory }) {
 	return (
-		<div className="categories">
+		<div className="jh-categories">
 			<label htmlFor="category-select" className="categories__label">
-				Filter by category
+				Shop by category
 			</label>
 
 			<select
 				id="category-select"
 				value={activeCategory}
 				onChange={(e) => setActiveCategory(e.target.value)}
-				className="categories__select"
+				className="jh-categories__select"
 			>
 				<option value="">All categories</option>
 
